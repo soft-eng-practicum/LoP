@@ -12,10 +12,3 @@ Process Tool: Trello;
 
 
 
-OOP Model for Legend of Prototype
-
-
-
-
-
-
