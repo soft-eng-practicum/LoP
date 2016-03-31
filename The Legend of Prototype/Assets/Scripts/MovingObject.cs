@@ -14,6 +14,9 @@ namespace Completed
         private Rigidbody2D rb2D;               //The Rigidbody2D component attached to this object.
         private float inverseMoveTime;          //Used to make movement more efficient.
 
+        public MovingObject()
+        {
+        }
 
         //Protected, virtual functions can be overridden by inheriting classes.
         protected virtual void Start()

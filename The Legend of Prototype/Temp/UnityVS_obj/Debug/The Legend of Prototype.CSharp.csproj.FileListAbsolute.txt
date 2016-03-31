@@ -1,0 +1,15 @@
+C:\Users\Alvin\Documents\GitHub\KidsGame\The Legend of Prototype\Temp\UnityVS_obj\Debug\The Legend of Prototype.CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Alvin\Documents\GitHub\KidsGame\The Legend of Prototype\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+C:\Users\Alvin\Documents\GitHub\KidsGame\The Legend of Prototype\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+C:\Users\Alvin\Documents\GitHub\KidsGame\The Legend of Prototype\Temp\UnityVS_bin\Debug\Mono.Cecil.dll
+C:\Users\Alvin\Documents\GitHub\KidsGame\The Legend of Prototype\Temp\UnityVS_bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\Alvin\Documents\GitHub\KidsGame\The Legend of Prototype\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\Users\Alvin\Documents\GitHub\KidsGame\The Legend of Prototype\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\Users\Alvin\Documents\GitHub\KidsGame\The Legend of Prototype\Temp\UnityVS_bin\Debug\UnityEngine.Networking.dll
+C:\Users\Alvin\Documents\GitHub\KidsGame\The Legend of Prototype\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+C:\Users\Alvin\Documents\GitHub\KidsGame\The Legend of Prototype\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\Users\Alvin\Documents\GitHub\KidsGame\The Legend of Prototype\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+C:\Users\Alvin\Documents\GitHub\KidsGame\The Legend of Prototype\Temp\UnityVS_bin\Debug\UnityEngine.Networking.xml
+C:\Users\Alvin\Documents\GitHub\KidsGame\The Legend of Prototype\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\Users\Alvin\Documents\GitHub\KidsGame\The Legend of Prototype\Temp\UnityVS_obj\Debug\Assembly-CSharp.dll
+C:\Users\Alvin\Documents\GitHub\KidsGame\The Legend of Prototype\Temp\UnityVS_obj\Debug\Assembly-CSharp.pdb

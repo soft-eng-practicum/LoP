@@ -50,8 +50,8 @@ namespace Completed
             //Now that Enemy has moved, set skipMove to true to skip next move.
             skipMove = true;
         }
-
-
+   
+    
         //MoveEnemy is called by the GameManger each turn to tell each Enemy to try to move towards the player.
         public void MoveEnemy()
         {
