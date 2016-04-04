@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Legend of Prototype.CSharp", "The Legend of Prototype.CSharp.csproj", "{1739075F-3137-0F32-8E60-B7E7A1D5F8C1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Legend of Prototype.CSharp.Editor", "The Legend of Prototype.CSharp.Editor.csproj", "{E5F1E399-3590-7D5A-EC33-6F67F926E294}"

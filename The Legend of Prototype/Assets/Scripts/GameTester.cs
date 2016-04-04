@@ -6,9 +6,5 @@ namespace Completed
     public class GameTester : MonoBehaviour
     {
         Wall w = new Wall();
-
-        w.DamageWall(3);
-
-
     }
 }
