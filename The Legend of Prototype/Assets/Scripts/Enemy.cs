@@ -13,6 +13,10 @@ namespace Completed
         private Transform target;                           //Transform to attempt to move toward each turn.
         private bool skipMove;                              //Boolean to determine whether or not enemy should skip a turn or move this turn.
 
+        public Sprite dmgEnemy;
+        public int hp = 2;
+
+        private SpriteRenderer spriteRenderer;      //Store a component reference to the attached SpriteRenderer.
 
         //Start overrides the virtual Start function of the base class.
         protected override void Start()
@@ -90,6 +94,23 @@ namespace Completed
             hitPlayer.LoseFood(playerDamage);
 
             
+        }
+
+        public void DamageEnemy(int loss)
+        {
+            //Call the RandomizeSfx function of SoundManager to play one of two chop sounds.
+            // SoundManager.instance.RandomizeSfx(chopSound1, chopSound2);
+
+            //Set spriteRenderer to the damaged enemy sprite.
+            spriteRenderer.sprite = dmgEnemy;
+
+            //Subtract loss from hit point total.
+            hp -= loss;
+
+            //If hit points are less than or equal to zero:
+            if (hp <= 0)
+                //Disable the gameObject.
+                gameObject.SetActive(false);
         }
     }
 }
