@@ -96,13 +96,13 @@ namespace Completed
             
         }
 
-        public void DamageEnemy(int loss)
+        public void Damage(int loss)
         {
             //Call the RandomizeSfx function of SoundManager to play one of two chop sounds.
             // SoundManager.instance.RandomizeSfx(chopSound1, chopSound2);
-
+            print("Hitting enemy");
             //Set spriteRenderer to the damaged enemy sprite.
-            spriteRenderer.sprite = dmgEnemy;
+            //spriteRenderer.sprite = dmgEnemy;
 
             //Subtract loss from hit point total.
             hp -= loss;

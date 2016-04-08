@@ -67,7 +67,9 @@ namespace Completed
                 //Call AttemptMove passing in the generic parameter Wall, since that is what Player may interact with if they encounter one (by attacking it)
                 //Pass in horizontal and vertical as parameters to specify the direction to move Player in.
                 AttemptMove<Wall>(horizontal, vertical);
+                AttemptMove<Enemy>(horizontal, vertical);
             }
+            
         }
 
         //AttemptMove overrides the AttemptMove function in the base class MovingObject
@@ -101,16 +103,25 @@ namespace Completed
         //It takes a generic parameter T which in the case of Player is a Wall which the player can attack and destroy.
         protected override void OnCantMove<T>(T component)
         {
-            //Set hitWall to equal the component passed in as a parameter.
-            Wall hitWall = component as Wall;
-            //Enemy hitEnemy = component as Enemy;
-
-            //Call the DamageWall function of the Wall we are hitting.
-            hitWall.DamageWall(wallDamage);
-            //hitEnemy.DamageEnemy(enemyDamage);
-
             //Set the attack trigger of the player's animation controller in order to play the player's attack animation.
             animator.SetTrigger("playerChop");
+
+            //Set hitWall to equal the component passed in as a parameter.
+            
+            
+
+            //Call the DamageWall function of the Wall we are hitting.
+            if (component.GetComponent<Enemy>() == null)
+            {
+                Wall hitWall = component as Wall;
+                hitWall.Damage(wallDamage);
+            }
+            else
+            {
+                Enemy hitEnemy = component as Enemy;
+                hitEnemy.Damage(enemyDamage);
+            }
+
         }
 
 
