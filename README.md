@@ -16,9 +16,13 @@ HOW TO PLAY THE GAME!
 
 LINK -- https://drive.google.com/folderview?id=0B9ZbYhkRO95GZHVrVEx5RlZ1QVk&usp=sharing
 
-Click Desktop.html
+Download the Legend of Prototype Versions folder
 
-Download Unity WebPlayer
+Open the folder once complete
+
+Click LegendofPrototypeVersions.html to open in INTERNET EXPLORER
+
+Download  and Install Unity WebPlayer if prompted
 
 Re open browser and allow blocked material
 
