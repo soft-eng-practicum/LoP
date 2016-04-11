@@ -77,8 +77,9 @@ namespace Completed
         protected override void AttemptMove<T>(int xDir, int yDir)
         {
             //Every time player moves, subtract from food points total.
+            /*
             food--;
-            foodText.text = "Food: " + food;
+            foodText.text = "Food: " + food;*/
             //Call the AttemptMove method of the base class, passing in the component T (in this case Wall) and x and y direction to move.
             base.AttemptMove<T>(xDir, yDir);
 

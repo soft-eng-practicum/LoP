@@ -27,8 +27,8 @@ namespace Completed
         }
 
 
-        public int columns = 8;                                         //Number of columns in our game board.
-        public int rows = 8;                                            //Number of rows in our game board.
+        public int columns;                                         //Number of columns in our game board.
+        public int rows;                                            //Number of rows in our game board.
         public Count wallCount = new Count(5, 9);                      //Lower and upper limit for our random number of walls per level.
         public Count foodCount = new Count(1, 5);                      //Lower and upper limit for our random number of food items per level.
         public GameObject exit;                                         //Prefab to spawn for exit.
@@ -128,6 +128,18 @@ namespace Completed
             }
         }
 
+        public void makeWalls(GameObject[] tileArray)
+        {
+            List<Vector3> wallSpots = new List<Vector3>();
+
+            Vector3 a = new Vector3(2, 3, 0f);
+            wallSpots.Add(a);
+
+            //Choose a random tile from tileArray and assign it to tileChoice
+            GameObject tileChoice = tileArray[Random.Range(0, tileArray.Length)];
+            Instantiate(tileChoice, a, Quaternion.identity);
+
+        }
 
         //SetupScene initializes our level and calls the previous functions to lay out the game board
         public void SetupScene(int level)
@@ -139,7 +151,9 @@ namespace Completed
             InitialiseList();
 
             //Instantiate a random number of wall tiles based on minimum and maximum, at randomized positions.
-            LayoutObjectAtRandom(wallTiles, wallCount.minimum, wallCount.maximum);
+            // LayoutObjectAtRandom(wallTiles, wallCount.minimum, wallCount.maximum);
+
+            makeWalls(wallTiles);
 
             //Instantiate a random number of food tiles based on minimum and maximum, at randomized positions.
             LayoutObjectAtRandom(foodTiles, foodCount.minimum, foodCount.maximum);
