@@ -11,6 +11,9 @@ Process Tool: Trello;
 
 Sprites: http://www.piskelapp.com/user/6002227810402304
 
+Link to Canvas: 
+https://github.com/soft-eng-practicum/LoP.git
+
 
 HOW TO PLAY THE GAME!
 
