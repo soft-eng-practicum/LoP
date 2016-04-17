@@ -87,9 +87,19 @@ namespace Completed
             //Clear any Enemy objects in our List to prepare for next level.
             enemies.Clear();
 
-            //Call the SetupScene function of the BoardManager script, pass it current level number.
-            boardScript.SetupScene(level);
-
+            //Call the SetupScene function of the BoardManager script, pass it current level number.   
+            if (level == 1)
+            {
+                boardScript.SetupScene(1);
+            }
+            else if (level == 2)
+            {
+                boardScript.SetupScene2(5);
+            }
+            else if (level == 3)
+            {
+                boardScript.SetupScene3(10);
+            }
         }
 
 

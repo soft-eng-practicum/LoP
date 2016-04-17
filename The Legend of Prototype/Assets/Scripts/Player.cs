@@ -115,7 +115,7 @@ namespace Completed
             if (component.GetComponent<Enemy>() == null)
             {
                 Wall hitWall = component as Wall;
-                hitWall.Damage(wallDamage);
+                //hitWall.Damage(wallDamage);
             }
             else
             {

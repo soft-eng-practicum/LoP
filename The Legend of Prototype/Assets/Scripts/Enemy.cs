@@ -41,18 +41,18 @@ namespace Completed
         protected override void AttemptMove<T>(int xDir, int yDir)
         {
             //Check if skipMove is true, if so set it to false and skip this turn.
-            if (skipMove)
+           /* if (skipMove)
             {
                 skipMove = false;
                 return;
 
-            }
+            }*/
 
             //Call the AttemptMove function from MovingObject.
             base.AttemptMove<T>(xDir, yDir);
 
             //Now that Enemy has moved, set skipMove to true to skip next move.
-            skipMove = true;
+           // skipMove = true;
         }
    
     

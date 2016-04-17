@@ -17,7 +17,6 @@ namespace Completed
             public int minimum;             //Minimum value for our Count class.
             public int maximum;             //Maximum value for our Count class.
 
-
             //Assignment constructor.
             public Count(int min, int max)
             {
@@ -30,7 +29,7 @@ namespace Completed
         public int columns;                                         //Number of columns in our game board.
         public int rows;                                            //Number of rows in our game board.
         public Count wallCount = new Count(5, 9);                      //Lower and upper limit for our random number of walls per level.
-        public Count foodCount = new Count(1, 5);                      //Lower and upper limit for our random number of food items per level.
+        public Count foodCount = new Count(4, 8);                      //Lower and upper limit for our random number of food items per level.
         public GameObject exit;                                         //Prefab to spawn for exit.
         public GameObject[] floorTiles;                                 //Array of floor prefabs.
         public GameObject[] wallTiles;                                  //Array of wall prefabs.
@@ -123,21 +122,264 @@ namespace Completed
                 //Choose a random tile from tileArray and assign it to tileChoice
                 GameObject tileChoice = tileArray[Random.Range(0, tileArray.Length)];
 
-                //Instantiate tileChoice at the position returned by RandomPosition with no change in rotation
+                //Instantiate tileChoice at the position returned by RandomPosition with no change in rotation   
                 Instantiate(tileChoice, randomPosition, Quaternion.identity);
+                
             }
         }
 
         public void makeWalls(GameObject[] tileArray)
         {
-            List<Vector3> wallSpots = new List<Vector3>();
-
-            Vector3 a = new Vector3(2, 3, 0f);
-            wallSpots.Add(a);
-
             //Choose a random tile from tileArray and assign it to tileChoice
             GameObject tileChoice = tileArray[Random.Range(0, tileArray.Length)];
-            Instantiate(tileChoice, a, Quaternion.identity);
+            List<Vector3> wallSpots = new List<Vector3>();
+
+            //Column Zero 8 walls
+            Instantiate(tileChoice, new Vector3(0, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(0, 2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(0, 3, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(0, 4, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(0, 5, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(0, 6, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(0, 7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(0, 17, 0f), Quaternion.identity);
+            
+            //Column One 17 walls
+            Instantiate(tileChoice, new Vector3(1, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 3, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 4, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 5, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 6, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 8, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 9, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 10, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 11, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 12, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 14, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 15, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 17, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 18, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 19, 0f), Quaternion.identity);
+           
+            //Column Two 16 walls
+            Instantiate(tileChoice, new Vector3(2, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 3, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 5, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 6, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 8, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 9, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 10, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 11, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 12, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 14, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 15, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 17, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 18, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 19, 0f), Quaternion.identity);
+          
+            //Column Three 4 Walls
+            Instantiate(tileChoice, new Vector3(3, 7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(3, 8, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(3, 14, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(3, 15, 0f), Quaternion.identity);
+            
+            //Column Four 6 Walls
+            Instantiate(tileChoice, new Vector3(4, 0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(4, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(4, 2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(4, 7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(4, 8, 0f), Quaternion.identity);  
+            Instantiate(tileChoice, new Vector3(4, 14, 0f), Quaternion.identity);
+            
+            //Column Five 4 Walls
+            Instantiate(tileChoice, new Vector3(5,0,0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(5,1,0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(5,2,0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(5,14,0f), Quaternion.identity);
+
+            //Column Six 8 Walls
+            Instantiate(tileChoice, new Vector3(6,0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(6,1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(6,7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(6,12, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(6,13, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(6,14, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(6,15, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(6,16, 0f), Quaternion.identity);
+
+            //Column Seven 14 Walls
+            Instantiate(tileChoice, new Vector3(7,0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(7,1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(7,3, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(7,4, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(7,5, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(7,6, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(7,7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(7,8, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(7,9, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(7,12, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(7,13, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(7,14, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(7,15, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(7,16, 0f), Quaternion.identity);
+
+            //Column Eight
+            Instantiate(tileChoice, new Vector3(8,0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(8,1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(8,5, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(8,6, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(8,7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(8,12, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(8,13, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(8,14, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(8,15, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(8,16, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(8,18, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(8,19, 0f), Quaternion.identity);
+
+            //Column Nine
+            Instantiate(tileChoice, new Vector3(9,0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(9,1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(9,5, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(9,6, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(9,7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(9,12, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(9,15, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(9,16, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(9,19, 0f), Quaternion.identity);
+
+            //Column Ten
+            Instantiate(tileChoice, new Vector3(10,0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(10,1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(10,2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(10,3, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(10,5, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(10,6, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(10,7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(10,14, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(10,15, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(10,16, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(10,19, 0f), Quaternion.identity);
+
+            //Column Eleven
+            Instantiate(tileChoice, new Vector3(11,6, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(11,7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(11,8, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(11,9, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(11,10, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(11,12, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(11,14, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(11,15, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(11,16, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(11,17, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(11,19, 0f), Quaternion.identity);
+
+            //Column Twelve
+            Instantiate(tileChoice, new Vector3(12,5, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(12,6, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(12,7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(12,8, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(12,9, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(12,10, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(12,11, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(12,12, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(12,14, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(12,15, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(12,19, 0f), Quaternion.identity);
+
+            //Column Thirteen
+            Instantiate(tileChoice, new Vector3(13,0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(13,1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(13,3, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(13,4, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(13,5, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(13,6, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(13,7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(13,8, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(13,9, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(13,15, 0f), Quaternion.identity);
+
+            //Column Fourteen
+            Instantiate(tileChoice, new Vector3(14,0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(14,1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(14,3, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(14,4, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(14,5, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(14,6, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(14,7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(14,8, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(14,9, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(14,10, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(14,15, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(14,17, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(14,18, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(14,19, 0f), Quaternion.identity);
+
+            //Column Fifteen
+            Instantiate(tileChoice, new Vector3(15,0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(15,1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(15,5, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(15,10, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(15,15, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(15,19, 0f), Quaternion.identity);
+
+            //Column Sixteen
+            Instantiate(tileChoice, new Vector3(16,0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16,1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16,2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16,3, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16,5, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16,6, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16,8, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16,9, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16,10, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16,13, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16,14, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16,15, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16,16, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16,19, 0f), Quaternion.identity);
+
+            //Column Seventeen
+            Instantiate(tileChoice, new Vector3(17,8, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(17,9, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(17,16, 0f), Quaternion.identity);
+
+            //Column Eighteen
+            Instantiate(tileChoice, new Vector3(18,1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18,2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18,3, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18,4, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18,5, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18,6, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18,7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18,8, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18,9, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18,10, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18,11, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18,12, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18,14, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18,15, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18,16, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18,18, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18,19, 0f), Quaternion.identity);
+
+            //Column Nineteen
+            Instantiate(tileChoice, new Vector3(19,10, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(19,11, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(19,12, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(19,13, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(19,14, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(19,15, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(19,16, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(19,18, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(19,19, 0f), Quaternion.identity);
+
+
+
 
         }
 
@@ -164,8 +406,83 @@ namespace Completed
             //Instantiate a random number of enemies based on minimum and maximum, at randomized positions.
             LayoutObjectAtRandom(enemyTiles, enemyCount, enemyCount);
 
-            //Instantiate the exit tile in the upper right hand corner of our game board
-            Instantiate(exit, new Vector3(columns - 1, rows - 1, 0f), Quaternion.identity);
+            //Instantiate the exit tile 
+            Instantiate(exit, new Vector3(18, 17, 0f), Quaternion.identity);
+        }
+
+        public void makeWalls2(GameObject[] tileArray)
+        {
+            GameObject tileChoice = tileArray[Random.Range(0, tileArray.Length)];
+
+            Instantiate(tileChoice, new Vector3(0, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(0, 2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(0, 3, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(0, 4, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(0, 5, 0f), Quaternion.identity);
+        }
+
+        public void SetupScene2(int level)
+        {
+            //Creates the outer walls and floor.
+            BoardSetup();
+
+            //Reset our list of gridpositions.
+            InitialiseList();
+
+            //Instantiate a random number of wall tiles based on minimum and maximum, at randomized positions.
+            // LayoutObjectAtRandom(wallTiles, wallCount.minimum, wallCount.maximum);
+
+            makeWalls2(wallTiles);
+
+            //Instantiate a random number of food tiles based on minimum and maximum, at randomized positions.
+            LayoutObjectAtRandom(foodTiles, foodCount.minimum, foodCount.maximum);
+
+            //Determine number of enemies based on current level number, based on a logarithmic progression
+            int enemyCount = (int)Mathf.Log(level, 2f);
+
+            //Instantiate a random number of enemies based on minimum and maximum, at randomized positions.
+            LayoutObjectAtRandom(enemyTiles, enemyCount, enemyCount);
+
+            //Instantiate the exit tile 
+            Instantiate(exit, new Vector3(18, 17, 0f), Quaternion.identity);
+        }
+
+
+        public void makeWalls3(GameObject[] tileArray)
+        {
+            GameObject tileChoice = tileArray[Random.Range(0, tileArray.Length)];
+
+            Instantiate(tileChoice, new Vector3(0, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(0, 2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(0, 3, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(0, 4, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(0, 5, 0f), Quaternion.identity);
+        }
+
+        public void SetupScene3(int level)
+        {
+            //Creates the outer walls and floor.
+            BoardSetup();
+
+            //Reset our list of gridpositions.
+            InitialiseList();
+
+            //Instantiate a random number of wall tiles based on minimum and maximum, at randomized positions.
+            // LayoutObjectAtRandom(wallTiles, wallCount.minimum, wallCount.maximum);
+
+            makeWalls3(wallTiles);
+
+            //Instantiate a random number of food tiles based on minimum and maximum, at randomized positions.
+            LayoutObjectAtRandom(foodTiles, foodCount.minimum, foodCount.maximum);
+
+            //Determine number of enemies based on current level number, based on a logarithmic progression
+            int enemyCount = (int)Mathf.Log(level, 2f);
+
+            //Instantiate a random number of enemies based on minimum and maximum, at randomized positions.
+            LayoutObjectAtRandom(enemyTiles, enemyCount, enemyCount);
+
+            //Instantiate the exit tile 
+            Instantiate(exit, new Vector3(18, 17, 0f), Quaternion.identity);
         }
     }
 }
