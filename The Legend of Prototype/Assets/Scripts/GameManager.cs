@@ -18,7 +18,9 @@ namespace Completed
 
         private Text levelText;                                 //Text to display current level number.
         private GameObject levelImage;                          //Image to block out level as levels are being set up, background for levelText.
-        private BoardManager boardScript;                       //Store a reference to our BoardManager which will set up the level.
+        private BoardManager boardScript;                       //Reference to Level 1 Board Manager
+        private BoardManager2 boardScript2;                     //Reference to Level 2 Board Manager
+        private BoardManager3 boardScript3;                     //Reference to Level 3 Board Manager
         private int level = 1;                                  //Current level number, expressed in game as "Day 1".
         private List<Enemy> enemies;                          //List of all Enemy units, used to issue them move commands.
         private bool enemiesMoving;                             //Boolean to check if enemies are moving.
@@ -49,6 +51,10 @@ namespace Completed
 
             //Get a component reference to the attached BoardManager script
             boardScript = GetComponent<BoardManager>();
+
+            boardScript2 = GetComponent<BoardManager2>();
+
+            boardScript3 = GetComponent<BoardManager3>();
 
             //Call the InitGame function to initialize the first level 
             InitGame();
@@ -94,11 +100,11 @@ namespace Completed
             }
             else if (level == 2)
             {
-                boardScript.SetupScene2(5);
+                boardScript2.SetupScene2(5);
             }
             else if (level == 3)
             {
-                boardScript.SetupScene3(10);
+                boardScript3.SetupScene3(10);
             }
         }
 
