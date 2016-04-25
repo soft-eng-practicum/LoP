@@ -134,9 +134,92 @@ namespace Completed
 
             Instantiate(tileChoice, new Vector3(0, 1, 0f), Quaternion.identity);
             Instantiate(tileChoice, new Vector3(0, 2, 0f), Quaternion.identity);
-            Instantiate(tileChoice, new Vector3(0, 3, 0f), Quaternion.identity);
-            Instantiate(tileChoice, new Vector3(0, 4, 0f), Quaternion.identity);
-            Instantiate(tileChoice, new Vector3(0, 5, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(1, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(1, 2, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(2, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 17, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 18, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(2, 19, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(3, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(3, 2, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(4, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(4, 2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(4, 15, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(5, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(5, 2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(5, 8, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(6, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(6, 2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(6, 6, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(6, 7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(6, 8, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(7, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(7, 2, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(9, 0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(9, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(9, 2, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(10, 0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(10, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(10, 2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(10, 4, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(11, 0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(11, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(11, 2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(11, 4, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(11, 9, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(11, 11, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(12, 0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(12, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(12, 2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(12, 4, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(13, 0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(13, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(13, 2, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(14, 0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(14, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(14, 2, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(15, 0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(15, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(15, 2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(15, 7, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(15, 15, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(16, 0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16, 2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16, 13, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(16, 14, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(17, 0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(17, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(17, 2, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(17, 13, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(18, 0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(18, 2, 0f), Quaternion.identity);
+
+            Instantiate(tileChoice, new Vector3(19, 0, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(19, 1, 0f), Quaternion.identity);
+            Instantiate(tileChoice, new Vector3(19, 2, 0f), Quaternion.identity);
+
+
+
         }
 
         public void SetupScene3(int level)
@@ -161,8 +244,7 @@ namespace Completed
             //Instantiate a random number of enemies based on minimum and maximum, at randomized positions.
             LayoutObjectAtRandom(enemyTiles, enemyCount, enemyCount);
 
-            //Instantiate the exit tile 
-            Instantiate(exit, new Vector3(18, 17, 0f), Quaternion.identity);
+           
         }
     }
 }

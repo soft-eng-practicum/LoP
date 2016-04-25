@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: 18799d21c6732b24c8c791535831332b
+timeCreated: 1461569445
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Trash Monster Attack RZ_0
+    21300002: Trash Monster Attack RZ_1
+    21300004: Trash Monster Attack RZ_2
+    21300006: Trash Monster Attack RZ_3
+    21300008: Trash Monster Attack RZ_4
+    21300010: Trash Monster Attack RZ_5
+    21300012: Trash Monster Attack RZ_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Trash Monster Attack RZ_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 32}
+        - {x: -20, y: 26}
+        - {x: -20, y: -32}
+        - {x: 20, y: -32}
+        - {x: 20, y: 25}
+        - {x: 13, y: 32}
+    - name: Trash Monster Attack RZ_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 35}
+        - {x: -14, y: 32}
+        - {x: -20, y: 25}
+        - {x: -20, y: -31}
+        - {x: -15, y: -32}
+        - {x: 22, y: -32}
+        - {x: 29, y: -18}
+        - {x: 29, y: 14}
+        - {x: 12, y: 35}
+    - name: Trash Monster Attack RZ_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 38}
+        - {x: -20, y: 32}
+        - {x: -20, y: -31}
+        - {x: -15, y: -32}
+        - {x: 24, y: -32}
+        - {x: 35, y: -10}
+        - {x: 35, y: 21}
+        - {x: 18, y: 38}
+    - name: Trash Monster Attack RZ_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 38}
+        - {x: -20, y: 38}
+        - {x: -20, y: -32}
+        - {x: 24, y: -32}
+        - {x: 47, y: -7}
+        - {x: 47, y: 19}
+        - {x: 40, y: 25}
+    - name: Trash Monster Attack RZ_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 32}
+        - {x: -20, y: 26}
+        - {x: -20, y: -32}
+        - {x: 20, y: -32}
+        - {x: 20, y: 25}
+        - {x: 13, y: 32}
+    - name: Trash Monster Attack RZ_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 20}
+        - {x: -8, y: 18}
+        - {x: -20, y: 7}
+        - {x: -20, y: -28}
+        - {x: -15, y: -32}
+        - {x: 16, y: -32}
+        - {x: 20, y: -28}
+        - {x: 20, y: 7}
+        - {x: 7, y: 20}
+    - name: Trash Monster Attack RZ_6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 20}
+        - {x: -8, y: 18}
+        - {x: -20, y: 7}
+        - {x: -20, y: -28}
+        - {x: -15, y: -32}
+        - {x: 16, y: -32}
+        - {x: 20, y: -28}
+        - {x: 20, y: 7}
+        - {x: 7, y: 20}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

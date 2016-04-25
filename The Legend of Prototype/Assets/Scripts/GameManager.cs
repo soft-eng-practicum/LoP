@@ -82,7 +82,7 @@ namespace Completed
             levelText = GameObject.Find("LevelText").GetComponent<Text>();
 
             //Set the text of levelText to the string "Day" and append the current level number.
-            levelText.text = "Level " + level;
+            //levelText.text = "Level " + level;
 
             //Set levelImage to active blocking player's view of the game board during setup.
             levelImage.SetActive(true);
@@ -96,14 +96,17 @@ namespace Completed
             //Call the SetupScene function of the BoardManager script, pass it current level number.   
             if (level == 1)
             {
-                boardScript.SetupScene(1);
+                levelText.text = "Forget Me Junkyard ";
+                boardScript.SetupScene(15);
             }
             else if (level == 2)
             {
-                boardScript2.SetupScene2(5);
+                levelText.text = "Not Central Park ";
+                boardScript2.SetupScene2(15);
             }
             else if (level == 3)
             {
+                levelText.text = "Candy Shack ";
                 boardScript3.SetupScene3(10);
             }
         }

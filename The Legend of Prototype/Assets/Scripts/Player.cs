@@ -105,7 +105,7 @@ namespace Completed
         protected override void OnCantMove<T>(T component)
         {
             //Set the attack trigger of the player's animation controller in order to play the player's attack animation.
-            animator.SetTrigger("playerChop");
+            animator.SetTrigger("ava attack");
 
             //Set hitWall to equal the component passed in as a parameter.
             
@@ -175,7 +175,7 @@ namespace Completed
         public void LoseFood(int loss)
         {
             //Set the trigger for the player animator to transition to the playerHit animation.
-            animator.SetTrigger("playerHit");
+            animator.SetTrigger("ava hit");
 
             //Subtract lost food points from the players total.
             food -= loss;
@@ -195,6 +195,7 @@ namespace Completed
 
                 //Call the GameOver function of GameManager.
                 GameManager.instance.GameOver();
+                
             }
         }
     }

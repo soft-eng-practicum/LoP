@@ -31,6 +31,7 @@ namespace Completed
         public Count wallCount = new Count(5, 9);                      //Lower and upper limit for our random number of walls per level.
         public Count foodCount = new Count(4, 8);                      //Lower and upper limit for our random number of food items per level.
         public GameObject exit;                                         //Prefab to spawn for exit.
+        public GameObject exitHelp;
         public GameObject[] floorTiles;                                 //Array of floor prefabs.
         public GameObject[] wallTiles;                                  //Array of wall prefabs.
         public GameObject[] foodTiles;                                  //Array of food prefabs.
@@ -378,9 +379,6 @@ namespace Completed
             Instantiate(tileChoice, new Vector3(19,18, 0f), Quaternion.identity);
             Instantiate(tileChoice, new Vector3(19,19, 0f), Quaternion.identity);
 
-
-
-
         }
 
         //SetupScene initializes our level and calls the previous functions to lay out the game board
@@ -401,50 +399,16 @@ namespace Completed
             LayoutObjectAtRandom(foodTiles, foodCount.minimum, foodCount.maximum);
 
             //Determine number of enemies based on current level number, based on a logarithmic progression
-            int enemyCount = (int)Mathf.Log(level, 2f);
+            int enemyCount = (int)Mathf.Log(level, 2f); 
 
             //Instantiate a random number of enemies based on minimum and maximum, at randomized positions.
             LayoutObjectAtRandom(enemyTiles, enemyCount, enemyCount);
 
             //Instantiate the exit tile 
             Instantiate(exit, new Vector3(18, 17, 0f), Quaternion.identity);
+            Instantiate(exitHelp, new Vector3(19, 17, 0f), Quaternion.identity);
         }
 
-        public void makeWalls3(GameObject[] tileArray)
-        {
-            GameObject tileChoice = tileArray[Random.Range(0, tileArray.Length)];
-
-            Instantiate(tileChoice, new Vector3(0, 1, 0f), Quaternion.identity);
-            Instantiate(tileChoice, new Vector3(0, 2, 0f), Quaternion.identity);
-            Instantiate(tileChoice, new Vector3(0, 3, 0f), Quaternion.identity);
-            Instantiate(tileChoice, new Vector3(0, 4, 0f), Quaternion.identity);
-            Instantiate(tileChoice, new Vector3(0, 5, 0f), Quaternion.identity);
-        }
-
-        public void SetupScene3(int level)
-        {
-            //Creates the outer walls and floor.
-            BoardSetup();
-
-            //Reset our list of gridpositions.
-            InitialiseList();
-
-            //Instantiate a random number of wall tiles based on minimum and maximum, at randomized positions.
-            // LayoutObjectAtRandom(wallTiles, wallCount.minimum, wallCount.maximum);
-
-            makeWalls3(wallTiles);
-
-            //Instantiate a random number of food tiles based on minimum and maximum, at randomized positions.
-            LayoutObjectAtRandom(foodTiles, foodCount.minimum, foodCount.maximum);
-
-            //Determine number of enemies based on current level number, based on a logarithmic progression
-            int enemyCount = (int)Mathf.Log(level, 2f);
-
-            //Instantiate a random number of enemies based on minimum and maximum, at randomized positions.
-            LayoutObjectAtRandom(enemyTiles, enemyCount, enemyCount);
-
-            //Instantiate the exit tile 
-            Instantiate(exit, new Vector3(18, 17, 0f), Quaternion.identity);
-        }
+  
     }
 }

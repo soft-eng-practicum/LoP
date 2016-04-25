@@ -132,6 +132,25 @@ namespace Completed
         public void makeWalls2(GameObject[] tileArray)
         {
             GameObject tileChoice = tileArray[Random.Range(0, tileArray.Length)];
+            List<Vector3> wallSpots = new List<Vector3>();
+            /*
+            wallSpot.Add(new Vector3(0, 2, 0f));
+            wallSpots.Add(new Vector3(0, 3, 0f));
+            wallSpots.Add(new Vector3(0, 4, 0f));
+            wallSpots.Add(new Vector3(0, 5, 0f));
+            wallSpots.Add(new Vector3(0, 6, 0f));
+            wallSpots.Add(new Vector3(0, 7, 0f));
+            wallSpots.Add(new Vector3(0, 8, 0f));
+            wallSpots.Add(new Vector3(0, 9, 0f));
+            wallSpots.Add(new Vector3(0, 12, 0f));
+            wallSpots.Add(new Vector3(0, 13, 0f));
+            wallSpots.Add(new Vector3(0, 19, 0f));
+            
+            for(int i = 0; i < wallSpots.Count; i++)
+            {
+                Instantiate(tileChoice, wallSpots[i], Quaternion.identity);
+                    
+            }*/
 
             //Column Zero
             Instantiate(tileChoice, new Vector3(0, 2, 0f), Quaternion.identity);
@@ -145,7 +164,7 @@ namespace Completed
             Instantiate(tileChoice, new Vector3(0, 12, 0f), Quaternion.identity);
             Instantiate(tileChoice, new Vector3(0, 13, 0f), Quaternion.identity);
             Instantiate(tileChoice, new Vector3(0, 19, 0f), Quaternion.identity);
-
+            
             //Column One
             Instantiate(tileChoice, new Vector3(1, 3, 0f), Quaternion.identity);
             Instantiate(tileChoice, new Vector3(1, 4, 0f), Quaternion.identity);
