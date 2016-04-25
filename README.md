@@ -5,7 +5,7 @@ Language: C++/Javascript;
 
 Framework/Engine: Unity;
 
-Platform: Google Chrome/Mozilla Firefox/Internet Explorer;
+Platform: Mozilla Firefox/Internet Explorer;
 
 Process Tool: Trello;
 
