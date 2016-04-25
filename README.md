@@ -17,19 +17,11 @@ https://github.com/soft-eng-practicum/LoP.git
 
 HOW TO PLAY THE GAME!
 
-LINK -- https://drive.google.com/folderview?id=0B9ZbYhkRO95GZHVrVEx5RlZ1QVk&usp=sharing
+Click This Link (Use Internet Explorer or Mozilla Firefox)
 
-Download the Legend of Prototype Versions folder
+https://ajean17.itch.io/the-legend-of-prototype
 
-Open the folder once complete
-
-Click LegendofPrototypeVersions.html to open in INTERNET EXPLORER
-
-Download  and Install Unity WebPlayer if prompted
-
-Re open browser and allow blocked material
-
-Enjoy Controls are the d pad!
+Enjoy!
 
 
 
